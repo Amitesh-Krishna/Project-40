@@ -34,12 +34,13 @@ class Game{
         form.hide();
         Player.getPlayerInfo();
         image(back_img, 0, 0, 1000, 800);
-        var x =100;
-        var y=200;
-        var index =0;
+        var x = 100;
+        var y = 200;
+        var index = 0;
         drawSprites();
         for(var plr in allPlayers){
             index = index+1;
+            console.log(index);
             x = 500-allPlayers[plr].distance;
             y=500;
             players[index -1].x = x;
